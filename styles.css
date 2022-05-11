@@ -1,3 +1,7 @@
+*{
+    /* border:1px solid red; */
+}
+
 html,body,h1,h2,h3,h4,p{
     margin:0;
     padding:0;
@@ -17,6 +21,24 @@ html,body,h1,h2,h3,h4,p{
     justify-content: center;
     overflow: hidden;
 }
+
+.img-left >img{
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+figcaption{
+    position: absolute;
+    color:white;
+    bottom:1%;
+    
+}
+
+figcaption a{
+    color:white;
+}
+
 .img-overlay{
     display:flex;
     position: absolute;
@@ -28,14 +50,12 @@ html,body,h1,h2,h3,h4,p{
     justify-content:center;
     align-items: center;
 }
-img{
-    min-width: 100%;
+
+.img-overlay img{
+    max-width: 15%;
+    height: auto;
 }
-figcaption{
-    position: absolute;
-    color:white;
-    bottom:1%;
-}
+
 
 .main{
     width:70%;
@@ -48,6 +68,15 @@ figcaption{
 .message{
     width:80%;
     padding-left: 2rem;
+    font-size: 1.8rem;
+}
+
+.message p:last-child{
+    padding-top: 1.5rem;
+}
+
+.form-container{
+    /* margin-bottom:1rem; */
 }
 
 form , .form-inputs{
@@ -57,17 +86,19 @@ form , .form-inputs{
 
 .form-inputs{
     background-color: white;
-    margin:1rem 0;
+    margin:4rem 0 1.5rem 0;
     padding:1rem 2rem;
 }
 
 .form-greeting{
     padding-bottom:1rem;
+    font-size: 1.5rem;
 }
 
 .input-groups{
     display:flex;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .form-input{
@@ -77,8 +108,20 @@ form , .form-inputs{
     padding:.5rem 0;
 }
 
-.form-input input:active{
-    /* color:blue; */
+.form-input input{
+    padding:.5rem 0;
+    border-radius: 5px;
+    border:2px solid #E5E7EB;
+    padding-left: .5rem;
+}
+
+.form-input input:focus,.form-input input:hover{
+    outline:none;
+}
+
+.form-input input:focus{
+    border-color: blue;
+    box-shadow: 5px 5px 10px lightgray;
 }
 
 .fi-push-right{
@@ -91,10 +134,37 @@ form , .form-inputs{
 }
 
 .form-button button{
-    padding:.5rem 2rem;
-    background-color: rgb(92, 119, 37);
+    padding:.8rem 3rem;
+    background-color:#596D48;
     border: none;
     border-radius: 5px;
     color:white;
     margin-bottom:1.5rem;
+    cursor: pointer;
 }
+
+.form-button a{
+    color:#596D48;
+    text-decoration: none;
+}
+
+
+.form-input .invalid{
+    border-color: red;
+    
+}
+
+.error{
+    text-transform: none;
+}
+
+.error-message-show{
+    color:red;
+    visibility: visible;
+}
+
+.error-message-hide{
+    
+    visibility:hidden;
+}
+
