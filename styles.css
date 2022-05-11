@@ -20,6 +20,7 @@ html,body,h1,h2,h3,h4,p{
     display:flex;
     justify-content: center;
     overflow: hidden;
+    font-family: "Macondo";
 }
 
 .img-left >img{
@@ -49,10 +50,11 @@ figcaption a{
     height:15vh;
     justify-content:center;
     align-items: center;
+    font-size: 2rem;
 }
 
 .img-overlay img{
-    max-width: 15%;
+    width: clamp(70px,90px, 25%);
     height: auto;
 }
 
@@ -63,6 +65,8 @@ figcaption a{
     flex-flow: column nowrap;
     justify-content: center;
     background: rgb(245, 244, 244);
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
 }
 
 .message{
@@ -77,6 +81,7 @@ figcaption a{
 
 .form-container{
     /* margin-bottom:1rem; */
+    letter-spacing: 1px;
 }
 
 form , .form-inputs{
@@ -104,7 +109,7 @@ form , .form-inputs{
 .form-input{
     display:flex;
     flex-flow: column nowrap;
-    width:30%;
+    width:clamp(150px,30%,30%);
     padding:.5rem 0;
 }
 
@@ -130,7 +135,6 @@ form , .form-inputs{
 
 .form-button{
     padding-left:2rem;
-    
 }
 
 .form-button button{
@@ -141,6 +145,9 @@ form , .form-inputs{
     color:white;
     margin-bottom:1.5rem;
     cursor: pointer;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    letter-spacing: .5px;
 }
 
 .form-button a{
