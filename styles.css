@@ -11,25 +11,25 @@ html,body,h1,h2,h3,h4,p{
 }
 
 .img-left{
-    width:30%;
+    width:40%;
     position: relative;
     display:flex;
     justify-content: center;
-
+    overflow: hidden;
 }
 .img-overlay{
     display:flex;
     position: absolute;
     top:25%;
     color:white;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
     width:100%;
     height:15vh;
     justify-content:center;
     align-items: center;
 }
 img{
-    max-width: 100%;
+    min-width: 100%;
 }
 figcaption{
     position: absolute;
@@ -67,17 +67,22 @@ form , .form-inputs{
 
 .input-groups{
     display:flex;
+    width: 100%;
 }
 
 .form-input{
     display:flex;
     flex-flow: column nowrap;
-    width:25%;
+    width:30%;
     padding:.5rem 0;
 }
 
+.form-input input:active{
+    /* color:blue; */
+}
+
 .fi-push-right{
-    margin-right:5rem;
+    margin-right:4rem;
 }
 
 .form-button{
